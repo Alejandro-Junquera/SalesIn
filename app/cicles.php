@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class cicles extends Model
 {
     protected $table='cicles';
-    protected $fillable=['name','img','deleted'];
+    //protected $fillable=['id','name','img','deleted'];
 }
