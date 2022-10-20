@@ -20,7 +20,7 @@ class CreateArticlesTable extends Migration
             $table->string('image',255);
             $table->boolean('deleted')->default(0);
             $table->text('description');
-            $table->foreign("cicles_id")->refenreces('id')->on('cicles');
+            $table->foreign('cicles_id')->references('id')->on('cicles');
             $table->timestamps();
         });
     }
