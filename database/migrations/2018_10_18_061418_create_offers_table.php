@@ -15,12 +15,12 @@ class CreateOffersTable extends Migration
     {
         Schema::create('offers', function (Blueprint $table) {
             $table->engine = "InnoDB";
-            $table->unsignedBigIncrements('id');
+            $table->BigIncrements('id');
             $table->text('title');
             $table->text('description');
             $table->date('date_max');
             $table->integer('num_candidates');
-            $table->unsignedBigIncrements('cicle_id');
+            $table->BigIncrements('cicle_id');
             $table->foreign('cicle_id')->references('id')->on('cicles');
             $table->boolean('deleted')->default(0);
             $table->timestamp('created_at');

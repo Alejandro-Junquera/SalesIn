@@ -14,9 +14,9 @@ class CreateRequirementsTable extends Migration
     public function up()
     {
         Schema::create('requirements', function (Blueprint $table) {
-            $table->unsignedBigIncrements('id');
+            $table->BigIncrements('id');
             $table->text('description');
-            $table->unsignedBigIncrements('offer_id')->references('id')->on('offers');
+            $table->BigIncrements('offer_id')->references('id')->on('offers');
             $table->boolean('deleted')->default(0);
             $table->timestamps();
         });
