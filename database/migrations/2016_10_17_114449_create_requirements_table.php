@@ -17,6 +17,7 @@ class CreateRequirementsTable extends Migration
             $table->engine = "InnoDB";
             $table->bigIncrements('id');
             $table->text('description');
+            $table->unsignedBigInteger('offer_id');
             $table->foreign('offer_id')->references('id')->on('offers');
             $table->boolean('deleted')->default(0);
             $table->timestamps();
