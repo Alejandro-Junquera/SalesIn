@@ -16,9 +16,7 @@ class CreateAppliedsTable extends Migration
         Schema::create('applieds', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('id');
-            $table->BigInteger('offer_id');
             $table->foreign('offer_id')->references('id')->on('offers');
-            $table->BigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->boolean('deleted')->default(0);
             $table->timestamps();
