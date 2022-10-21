@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
+
     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
         <form class="form" method="post" action="{{ route('login') }}">
             @csrf
@@ -46,8 +46,7 @@
             </div>
         </form>
     </div>
-@endsection
-=======
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -117,5 +116,4 @@
         </div>
     </div>
 </div>
-@endsection
->>>>>>> 4be3748eb6f53689c5610d2e79ac2521c5142178
+

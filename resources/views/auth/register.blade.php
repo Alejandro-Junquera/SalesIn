@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
     <div class="">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
             <div class="card card-register card-white">
@@ -52,7 +51,7 @@
             </div>
         </div>
     </div>
-=======
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -126,5 +125,4 @@
         </div>
     </div>
 </div>
->>>>>>> 4be3748eb6f53689c5610d2e79ac2521c5142178
-@endsection
+
